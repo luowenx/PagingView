@@ -13,6 +13,13 @@
 		2B3674111DB5DEB90079BE39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B36740F1DB5DEB90079BE39 /* Main.storyboard */; };
 		2B3674131DB5DEB90079BE39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3674121DB5DEB90079BE39 /* Assets.xcassets */; };
 		2B3674161DB5DEB90079BE39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3674141DB5DEB90079BE39 /* LaunchScreen.storyboard */; };
+		2B3674341DB5DEF50079BE39 /* CustomButton+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B36741F1DB5DEF50079BE39 /* CustomButton+badge.m */; };
+		2B3674351DB5DEF50079BE39 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3674211DB5DEF50079BE39 /* CustomButton.m */; };
+		2B3674361DB5DEF50079BE39 /* PagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3674231DB5DEF50079BE39 /* PagingView.m */; };
+		2B3674371DB5DEF50079BE39 /* NSObject+lwx_associate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3674261DB5DEF50079BE39 /* NSObject+lwx_associate.m */; };
+		2B3674381DB5DEF50079BE39 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B36742A1DB5DEF50079BE39 /* ALView+PureLayout.m */; };
+		2B3674391DB5DEF50079BE39 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B36742C1DB5DEF50079BE39 /* NSArray+PureLayout.m */; };
+		2B36743A1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B36742E1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,23 @@
 		2B3674121DB5DEB90079BE39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3674151DB5DEB90079BE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3674171DB5DEB90079BE39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B36741E1DB5DEF50079BE39 /* CustomButton+badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomButton+badge.h"; sourceTree = "<group>"; };
+		2B36741F1DB5DEF50079BE39 /* CustomButton+badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CustomButton+badge.m"; sourceTree = "<group>"; };
+		2B3674201DB5DEF50079BE39 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		2B3674211DB5DEF50079BE39 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		2B3674221DB5DEF50079BE39 /* PagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingView.h; sourceTree = "<group>"; };
+		2B3674231DB5DEF50079BE39 /* PagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingView.m; sourceTree = "<group>"; };
+		2B3674251DB5DEF50079BE39 /* NSObject+lwx_associate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+lwx_associate.h"; sourceTree = "<group>"; };
+		2B3674261DB5DEF50079BE39 /* NSObject+lwx_associate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+lwx_associate.m"; sourceTree = "<group>"; };
+		2B3674291DB5DEF50079BE39 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		2B36742A1DB5DEF50079BE39 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		2B36742B1DB5DEF50079BE39 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		2B36742C1DB5DEF50079BE39 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		2B36742D1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		2B36742E1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		2B36742F1DB5DEF50079BE39 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		2B3674301DB5DEF50079BE39 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		2B3674311DB5DEF50079BE39 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +82,13 @@
 		2B3674051DB5DEB90079BE39 /* PagingView */ = {
 			isa = PBXGroup;
 			children = (
+				2B36741D1DB5DEF50079BE39 /* CustomButton */,
+				2B3674241DB5DEF50079BE39 /* Extension */,
+				2B3674271DB5DEF50079BE39 /* framework */,
 				2B3674091DB5DEB90079BE39 /* AppDelegate.h */,
 				2B36740A1DB5DEB90079BE39 /* AppDelegate.m */,
 				2B36740C1DB5DEB90079BE39 /* ViewController.h */,
 				2B36740D1DB5DEB90079BE39 /* ViewController.m */,
-				2B36740F1DB5DEB90079BE39 /* Main.storyboard */,
-				2B3674121DB5DEB90079BE39 /* Assets.xcassets */,
-				2B3674141DB5DEB90079BE39 /* LaunchScreen.storyboard */,
-				2B3674171DB5DEB90079BE39 /* Info.plist */,
 				2B3674061DB5DEB90079BE39 /* Supporting Files */,
 			);
 			path = PagingView;
@@ -74,9 +97,59 @@
 		2B3674061DB5DEB90079BE39 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B36740F1DB5DEB90079BE39 /* Main.storyboard */,
+				2B3674121DB5DEB90079BE39 /* Assets.xcassets */,
+				2B3674141DB5DEB90079BE39 /* LaunchScreen.storyboard */,
+				2B3674171DB5DEB90079BE39 /* Info.plist */,
 				2B3674071DB5DEB90079BE39 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B36741D1DB5DEF50079BE39 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				2B36741E1DB5DEF50079BE39 /* CustomButton+badge.h */,
+				2B36741F1DB5DEF50079BE39 /* CustomButton+badge.m */,
+				2B3674201DB5DEF50079BE39 /* CustomButton.h */,
+				2B3674211DB5DEF50079BE39 /* CustomButton.m */,
+				2B3674221DB5DEF50079BE39 /* PagingView.h */,
+				2B3674231DB5DEF50079BE39 /* PagingView.m */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		2B3674241DB5DEF50079BE39 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B3674251DB5DEF50079BE39 /* NSObject+lwx_associate.h */,
+				2B3674261DB5DEF50079BE39 /* NSObject+lwx_associate.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2B3674271DB5DEF50079BE39 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				2B3674281DB5DEF50079BE39 /* PureLayou */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		2B3674281DB5DEF50079BE39 /* PureLayou */ = {
+			isa = PBXGroup;
+			children = (
+				2B3674291DB5DEF50079BE39 /* ALView+PureLayout.h */,
+				2B36742A1DB5DEF50079BE39 /* ALView+PureLayout.m */,
+				2B36742B1DB5DEF50079BE39 /* NSArray+PureLayout.h */,
+				2B36742C1DB5DEF50079BE39 /* NSArray+PureLayout.m */,
+				2B36742D1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.h */,
+				2B36742E1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.m */,
+				2B36742F1DB5DEF50079BE39 /* PureLayout+Internal.h */,
+				2B3674301DB5DEF50079BE39 /* PureLayout.h */,
+				2B3674311DB5DEF50079BE39 /* PureLayoutDefines.h */,
+			);
+			path = PureLayou;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3674361DB5DEF50079BE39 /* PagingView.m in Sources */,
+				2B36743A1DB5DEF50079BE39 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				2B3674341DB5DEF50079BE39 /* CustomButton+badge.m in Sources */,
+				2B3674351DB5DEF50079BE39 /* CustomButton.m in Sources */,
+				2B3674381DB5DEF50079BE39 /* ALView+PureLayout.m in Sources */,
 				2B36740E1DB5DEB90079BE39 /* ViewController.m in Sources */,
 				2B36740B1DB5DEB90079BE39 /* AppDelegate.m in Sources */,
 				2B3674081DB5DEB90079BE39 /* main.m in Sources */,
+				2B3674391DB5DEF50079BE39 /* NSArray+PureLayout.m in Sources */,
+				2B3674371DB5DEF50079BE39 /* NSObject+lwx_associate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
