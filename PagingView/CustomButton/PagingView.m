@@ -60,7 +60,7 @@
         [btn autoPinEdgeToSuperviewEdge:(ALEdgeBottom)];
         
         [btn setClickAction:^(CustomButton *button) {
-            [self updateItemAtIndex:button.tag - 666];
+            [weakself clickActionOnItemIdex:button.tag - 666];
         }];
         
         lastBtn = btn;
@@ -68,6 +68,17 @@
         [weakViews addObject:btn];
     }];
     [self.items autoMatchViewsDimension:(ALDimensionWidth)];
+}
+
+- (void) clickActionOnItemIdex:(NSInteger) index
+{
+    if (_delegate && [_delegate respondsToSelector:@selector(willSelectPage:index:)] && ![_delegate willSelectPage:self index:index]) {
+        return;
+    }
+    if (_delegate && [_delegate respondsToSelector:@selector(didSelectPage:index:)]) {
+        [_delegate didSelectPage:self index:index];
+    }
+    [self updateItemAtIndex:index];
 }
 
 - (void) updateItemAtIndex:(NSInteger)index

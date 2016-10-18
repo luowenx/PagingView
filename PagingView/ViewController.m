@@ -10,7 +10,7 @@
 #import "CustomButton.h"
 #import "PagingView.h"
 #import "CustomButton+badge.h"
-@interface ViewController ()
+@interface ViewController ()<PagingViewDelegate>
 
 @end
 
@@ -32,6 +32,7 @@
     NSArray *array = @[@"我是一个按钮",@"按钮2",@"第三个按钮"];
     PagingView *pag = [[PagingView alloc] initWithTitleArray:array];
     [self.view addSubview:pag];
+    pag.delegate = (id)self;
     [pag autoCenterInSuperview];
     [pag autoPinEdgeToSuperviewMargin:ALEdgeLeft];
     CustomButton *tmpItem = [pag itemAtIdex:1];
@@ -103,7 +104,17 @@
     [viewArray autoMatchViewsDimension:(ALDimensionWidth)];
 }
 
+#pragma mark ===    PagingViewDelegate
 
+- (BOOL)willSelectPage:(PagingView *)pagingView index:(NSUInteger)index
+{
+    NSLog(@"willselect -- %@",@(index));
+    return YES;
+}
 
+-(void)didSelectPage:(PagingView *)pagingView index:(NSUInteger)index
+{
+    NSLog(@"didselect -- %@",@(index));
+}
 
 @end

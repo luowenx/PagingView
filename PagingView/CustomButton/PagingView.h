@@ -16,10 +16,25 @@
 
 static CGFloat kDefaultPagingViewHight = 40;
 
+
 @class CustomButton;
+@class PagingView;
+@protocol PagingViewDelegate <NSObject>
+@optional
+
+//  选中某个item,是否响应本次选中
+- (BOOL)willSelectPage:(PagingView*)pagingView index:(NSUInteger)index;
+
+//  选中某个item，将执行的事件
+- (void)didSelectPage:(PagingView*)pagingView index:(NSUInteger)index;
+
+@end
+
 @interface PagingView : UIView
 
 - (instancetype)initWithTitleArray:(NSArray *)titles;
+
+@property (weak, nonatomic) id<PagingViewDelegate> delegate;
 
 //  当前选中item
 @property (assign, nonatomic, readonly) NSInteger currentIndex;
