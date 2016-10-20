@@ -78,6 +78,7 @@
     if (_delegate && [_delegate respondsToSelector:@selector(didSelectPage:index:)]) {
         [_delegate didSelectPage:self index:index];
     }
+    _currentIndex = index;
     [self updateItemAtIndex:index];
 }
 
